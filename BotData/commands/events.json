@@ -1,0 +1,1189 @@
+{
+  "command": [
+    {
+      "name": "User Joins Server",
+      "perms": [],
+      "actions": [
+        {
+          "name": "welcome-message",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1097872135814385744",
+          "color": "00FF00",
+          "title": "Willkommen!",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Hey <@${tempVars.newuser.id}>, willkommen auf dem Gamer443 Discord Serer !\nWir wünschen dir viel Spaß 🤝",
+          "thumbnail": "",
+          "image": "",
+          "footer": "Gamer443-Bot | /help",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "add-member-role",
+          "category": "User Action",
+          "type": "Add Role to User",
+          "messageActionRows": [],
+          "user": "${tempVars.newuser.id}",
+          "rolename": "1079369496453718024"
+        }
+      ],
+      "var": {
+        "user": "newuser"
+      }
+    },
+    {
+      "name": "Any Message",
+      "perms": [],
+      "actions": [
+        {
+          "name": "generate-xp",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "xpdata",
+          "min": "1",
+          "max": "3",
+          "savevartype": "temp"
+        },
+        {
+          "name": "add-xp",
+          "category": "User Data",
+          "type": "Edit User Data",
+          "messageActionRows": [],
+          "user": "${tempVars.anymessagemember.id}",
+          "field": "xp",
+          "oper": "+",
+          "value": "${tempVars.xpdata}"
+        }
+      ],
+      "var": {}
+    },
+    {
+      "name": "User Kicked",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "kickuser"
+      }
+    },
+    {
+      "name": "User Banned",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "banuser"
+      }
+    },
+    {
+      "name": "Bot Initialization",
+      "perms": [],
+      "actions": [],
+      "var": {}
+    },
+    {
+      "name": "Channel Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdchannel"
+      }
+    },
+    {
+      "name": "Channel Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedchannel"
+      }
+    },
+    {
+      "name": "Channel Pins Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatepinschannel"
+      }
+    },
+    {
+      "name": "Channel Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatechannel"
+      }
+    },
+    {
+      "name": "Emoji Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdemoji"
+      }
+    },
+    {
+      "name": "Emoji Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedemoji"
+      }
+    },
+    {
+      "name": "Emoji Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatedemoji"
+      }
+    },
+    {
+      "name": "Guild Ban Remove",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Available",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Speaking",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Unavailable",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Typing Start",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "User Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Button Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "reaction-menu",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "newsping": [
+              {
+                "name": "check-news-role",
+                "category": "User Action",
+                "type": "Check If User Has Role",
+                "trueActions": [
+                  {
+                    "name": "remove-news",
+                    "category": "User Action",
+                    "type": "Remove Role From User",
+                    "messageActionRows": [],
+                    "user": "${tempVars.buttoninteraction.member.id}",
+                    "rolename": "1079416584071827476",
+                    "reason": "--"
+                  },
+                  {
+                    "name": "reply-news-interaction",
+                    "category": "Interaction",
+                    "type": "Reply To Interaction With Message",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}",
+                    "messagetext": "Die Rolle wurde erfolgreich entfernt ✅"
+                  }
+                ],
+                "falseActions": [
+                  {
+                    "name": "add-news",
+                    "category": "User Action",
+                    "type": "Add Role to User",
+                    "messageActionRows": [],
+                    "user": "${tempVars.buttoninteraction.member.id}",
+                    "rolename": "1079416584071827476"
+                  },
+                  {
+                    "name": "reply-news-interaction_1",
+                    "category": "Interaction",
+                    "type": "Reply To Interaction With Message",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}",
+                    "messagetext": "Die Rolle wurde erfolgreich hinzugefügt ✅"
+                  }
+                ],
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "role": "1079416584071827476"
+              }
+            ],
+            "umfragenping": [
+              {
+                "name": "check-umfragen-ping",
+                "category": "User Action",
+                "type": "Check If User Has Role",
+                "trueActions": [
+                  {
+                    "name": "remove-umfragen",
+                    "category": "User Action",
+                    "type": "Remove Role From User",
+                    "messageActionRows": [],
+                    "user": "${tempVars.buttoninteraction.member.id}",
+                    "rolename": "1079416694478475365",
+                    "reason": "--"
+                  },
+                  {
+                    "name": "reply-umfragen-reaction",
+                    "category": "Interaction",
+                    "type": "Reply To Interaction With Message",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}",
+                    "messagetext": "Die Rolle wurde erfolgreich entfernt ✅"
+                  }
+                ],
+                "falseActions": [
+                  {
+                    "name": "add-umfragen",
+                    "category": "User Action",
+                    "type": "Add Role to User",
+                    "messageActionRows": [],
+                    "user": "${tempVars.buttoninteraction.member.id}",
+                    "rolename": "1079416694478475365"
+                  },
+                  {
+                    "name": "reply-umfragen-reaction_1",
+                    "category": "Interaction",
+                    "type": "Reply To Interaction With Message",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}",
+                    "messagetext": "Die Rolle wurde erfolgreich hinzugefügt ✅"
+                  }
+                ],
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "role": "1079416694478475365"
+              }
+            ],
+            "giveawayping": [
+              {
+                "name": "check-giveaway-ping",
+                "category": "User Action",
+                "type": "Check If User Has Role",
+                "trueActions": [
+                  {
+                    "name": "remove-giveaways",
+                    "category": "User Action",
+                    "type": "Remove Role From User",
+                    "messageActionRows": [],
+                    "user": "${tempVars.buttoninteraction.member.id}",
+                    "rolename": "1079416757011361822",
+                    "reason": "--"
+                  },
+                  {
+                    "name": "reply-giveaway-interaction",
+                    "category": "Interaction",
+                    "type": "Reply To Interaction With Message",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}",
+                    "messagetext": "Die Rolle wurde erfolgreich entfernt ✅"
+                  }
+                ],
+                "falseActions": [
+                  {
+                    "name": "add-giveaways",
+                    "category": "User Action",
+                    "type": "Add Role to User",
+                    "messageActionRows": [],
+                    "user": "${tempVars.buttoninteraction.member.id}",
+                    "rolename": "1079416757011361822"
+                  },
+                  {
+                    "name": "reply-giveaway-interaction_1",
+                    "category": "Interaction",
+                    "type": "Reply To Interaction With Message",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}",
+                    "messagetext": "Die Rolle wurde erfolgreich hinzugefügt ✅"
+                  }
+                ],
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "role": "1079416757011361822"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        },
+        {
+          "name": "ticket-system",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "ticketopen": [
+              {
+                "name": "create-ticket",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "ticket-${tempVars.buttoninteraction.member.displayName}",
+                "chancategory": "Support",
+                "reason": "",
+                "channeltype": "Text",
+                "savetovariable": "ticketchannel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "wait1sec",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "ticket-perms",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "1079369496453718024",
+                "permissions": [
+                  "ADD_REACTIONS",
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "ticket-perms_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "ADD_REACTIONS",
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket-perms_2",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "1079369496474697839",
+                "permissions": [
+                  "ADD_REACTIONS",
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket-perms_3",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "1079369496474697840",
+                "permissions": [
+                  "ADD_REACTIONS",
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "send-ticket-embed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Close Ticket",
+                        "customid": "close-ticket",
+                        "style": "DANGER",
+                        "emoji": "",
+                        "URL": "",
+                        "ephemeral": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "color": "00FF00",
+                "title": "Ticket-System",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Wähle eine Aktion aus !\n----------\nEin Team-Member wird sich gleich um dich Kümmern, beschreibe dein Problem und Pinge notfalls ein Team-Mitglied !",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443-Bot |/help",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "reply-ticket-open",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "Dein Ticket findest du hier -> <#${tempVars.ticketchannel.id}>"
+              }
+            ],
+            "close-ticket": [
+              {
+                "name": "delete-ticket",
+                "category": "Channel Action",
+                "type": "Delete Channel",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "reason": "--"
+              },
+              {
+                "name": "ticket-close-log",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "1084885980399554591",
+                "color": "00FF00",
+                "title": "Ticket got Close",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Es wurde ein Ticket geschloßen !",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Select Interaction",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Command Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "Moderation",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "kick": [
+              {
+                "name": "get-user-kick",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "username",
+                "varname": "userkick",
+                "savevartype": "temp"
+              },
+              {
+                "name": "get-reason-kick",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "reason",
+                "varname": "reasonkick",
+                "savevartype": "temp"
+              },
+              {
+                "name": "kick-user",
+                "category": "User Action",
+                "type": "Kick User",
+                "messageActionRows": [],
+                "user": "${tempVars.userkick}",
+                "reason": "${tempVars.reasonkick}"
+              },
+              {
+                "name": "kick-log",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "1084885980399554591",
+                "color": "00FF00",
+                "title": "User got kicked",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Der User : \"${tempVars.userkick}\" wurde mit dem Grund : \"\"${tempVars.reasonkick} gekickt !",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "reply-kick",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "messagetext": "Der User ${tempVars.userkick} wurde erfolgreich gekickt ✅"
+              }
+            ],
+            "ban": [
+              {
+                "name": "get-user-ban",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "username",
+                "varname": "userban",
+                "savevartype": "temp"
+              },
+              {
+                "name": "get-reason-ban",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "reason",
+                "varname": "reasonban",
+                "savevartype": "temp"
+              },
+              {
+                "name": "get-time-ban",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "time",
+                "varname": "timeban",
+                "savevartype": "temp"
+              },
+              {
+                "name": "ban-user",
+                "category": "User Action",
+                "type": "Ban User",
+                "messageActionRows": [],
+                "user": "${tempVars.userban}",
+                "reason": "${tempVars.reasonban}",
+                "days": "${tempVars.timeban}"
+              },
+              {
+                "name": "ban-log",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "1084885980399554591",
+                "color": "00FF00",
+                "title": "User got Banned",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Der Nutzer : \"${tempVars.userban} wurde für ${tempVars.timeban} Tage gebannt, mit dem Grund : \"${tempVars.reasonban}\"",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443- Bot",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "reply-ban",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "messagetext": "Der User ${tempVars.userban} wurde erfolgreich gebannt ✅"
+              }
+            ],
+            "mute": [
+              {
+                "name": "get_username-mute",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "username",
+                "varname": "usermute",
+                "savevartype": "temp"
+              },
+              {
+                "name": "get-reason-mute",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "reason",
+                "varname": "reasonmute",
+                "savevartype": "temp"
+              },
+              {
+                "name": "remove-other-roles",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.usermute}",
+                "rolename": "1079369496453718024",
+                "reason": "--"
+              },
+              {
+                "name": "remove-other-roles_1",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.usermute}",
+                "rolename": "1079369496453718025",
+                "reason": "--"
+              },
+              {
+                "name": "add-mute",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.usermute}",
+                "rolename": "1079416155950821428"
+              },
+              {
+                "name": "mute-log",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "1084885980399554591",
+                "color": "FF0000",
+                "title": "User got Muted",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Der User : \"${tempVars.usermute}\" wurde mit dem Grund : \"${tempVars.reasonmute}\" gemuted",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot ",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "reply-mute",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "messagetext": "Der User ${tempVars.usermute} wurde mit dem Grund ${tempVars.reasonmute} gemuted ✅"
+              }
+            ],
+            "unmute": [
+              {
+                "name": "get-username-unmute",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "username",
+                "varname": "userunmute",
+                "savevartype": "temp"
+              },
+              {
+                "name": "remove-mute",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "${tempVars.userunmute}",
+                "rolename": "1079416155950821428",
+                "reason": "--"
+              },
+              {
+                "name": "add-other",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.userunmute}",
+                "rolename": "1079369496453718024"
+              },
+              {
+                "name": "unmute-log",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "1084885980399554591",
+                "color": "00FF00",
+                "title": "User got Unmuted !",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Die Stummschaltung des Users : \"${tempVars.userunmute}\" wurde aufgehoben.",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "reply-unmute",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "messagetext": "Der User ${tempVars.userunmute} wurde erfolgreich entmuted ✅"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.commandinteraction.commandName}"
+        },
+        {
+          "name": "Bot",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "clear": [
+              {
+                "name": "get-amount-clear",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "amount",
+                "varname": "amountclear",
+                "savevartype": "temp"
+              },
+              {
+                "name": "get-channel-clear",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "channel",
+                "varname": "channelclear",
+                "savevartype": "temp"
+              },
+              {
+                "name": "delete-messages-clear",
+                "category": "Channel Action",
+                "type": "Delete All Messages",
+                "messageActionRows": [],
+                "channelname": "${tempVars.channelclear}",
+                "msgcount": "${tempVars.amountclear}"
+              },
+              {
+                "name": "clear-log",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "1084885980399554591",
+                "color": "00FF00",
+                "title": "Channel got cleared",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Es wurden vermutlich ${tempVars.amountclear} Narichten aus ${tempVars.channelclear} entfernt",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "botactivity": [
+              {
+                "name": "get-activity",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "activity",
+                "varname": "botactivity",
+                "savevartype": "temp"
+              },
+              {
+                "name": "set-activtiy",
+                "category": "Bot Action",
+                "type": "Set Bot Activity",
+                "messageActionRows": [],
+                "activityname": "${tempVars.botactivity}",
+                "activitytype": "PLAYING",
+                "streamurl": ""
+              },
+              {
+                "name": "reply-activtiy",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "messagetext": "Die Botactivity wurde erfolreich auf  ${tempVars.botactivity} geändert ✅"
+              }
+            ],
+            "react": [
+              {
+                "name": "send-react",
+                "category": "Message",
+                "type": "Send Embed",
+                "fields": [
+                  {
+                    "name": "News",
+                    "value": "Reagiere mit \"📢\" um Pings für News zu erhalten.",
+                    "inline": "false"
+                  },
+                  {
+                    "name": "Umfragen",
+                    "value": "Reagiere mit \"📊\" um Pings für Umfragen zu erhalten.",
+                    "inline": "false"
+                  },
+                  {
+                    "name": "Giveaways",
+                    "value": "Reagiere mit \"🎁\" um Pings für Giveaways zu erhalten.",
+                    "inline": "true"
+                  }
+                ],
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "News",
+                        "customid": "newsping",
+                        "style": "PRIMARY",
+                        "emoji": "📢",
+                        "URL": "",
+                        "ephemeral": true
+                      },
+                      {
+                        "label": "Umfragen",
+                        "customid": "umfragenping",
+                        "style": "PRIMARY",
+                        "emoji": "📊",
+                        "URL": "",
+                        "ephemeral": true
+                      },
+                      {
+                        "label": "Giveaways",
+                        "customid": "giveawayping",
+                        "style": "PRIMARY",
+                        "emoji": "🎁",
+                        "URL": "",
+                        "ephemeral": true
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "1098118779545849926",
+                "color": "00FF00",
+                "title": "Reaction menü",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Wähle aus, für welche \"Ereignisse\" du einen Ping bekommen möchtest.",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot |/help",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "ticketsetup": [
+              {
+                "name": "ticket-embed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Ticket öffnen",
+                        "customid": "ticketopen",
+                        "style": "PRIMARY",
+                        "emoji": "🔔",
+                        "URL": "",
+                        "ephemeral": true
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "1097878004551663706",
+                "color": "00FF00",
+                "title": "Support - Ticket",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Öffne ein Ticket mit der Schaltfläche unter dieser Naricht !",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot | /help",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "delete-ticket-setup",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}"
+              }
+            ],
+            "help": [
+              {
+                "name": "help-menu",
+                "category": "Message",
+                "type": "Send Embed",
+                "fields": [
+                  {
+                    "name": "/help",
+                    "value": "Öffnet dieses Menu !",
+                    "inline": "false"
+                  },
+                  {
+                    "name": "/rank",
+                    "value": "Lasse dir deine aktuelle XP Anzahl anzeigen",
+                    "inline": "false"
+                  },
+                  {
+                    "name": "/rate",
+                    "value": "Lasse den Bot einen User Bewerten [Alles wird Random generiert, der Bot mag jeden !]",
+                    "inline": "false"
+                  }
+                ],
+                "messageActionRows": [],
+                "channelname": "1097875855428034570",
+                "color": "00FF00",
+                "title": "Help - Menu",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Hier findest du das Help - Menu !",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "reply-help",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "messagetext": "Das Help Menu wurde erfolgreich in Bot-Commands gesendet, da nur dort sowas hingehört ✅"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.commandinteraction.commandName}"
+        },
+        {
+          "name": "Fun",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "rate": [
+              {
+                "name": "get-user-rate",
+                "category": "Interaction",
+                "type": "Get Interaction Option",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "optiontype": "STRING",
+                "commandoptionname": "username",
+                "varname": "userrate",
+                "savevartype": "temp"
+              },
+              {
+                "name": "generate-rate",
+                "category": "Variable",
+                "type": "Generate Random Number",
+                "messageActionRows": [],
+                "varname": "rateamount",
+                "min": "1",
+                "max": "100",
+                "savevartype": "temp"
+              },
+              {
+                "name": "reply-rate",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "messagetext": "Der User ist ${tempVars.rateamount}% cool !"
+              }
+            ],
+            "rank": [
+              {
+                "name": "get-xp",
+                "category": "User Data",
+                "type": "Get User Data",
+                "messageActionRows": [],
+                "user": "${tempVars.commandinteraction.member.id}",
+                "field": "xp",
+                "varname": "xprank",
+                "savevartype": "temp",
+                "vartype": "User"
+              },
+              {
+                "name": "reply-rank",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}",
+                "messagetext": "Deine aktuelle XP Anzahl liegt bei : ${tempVars.xprank}"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.commandinteraction.commandName}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    }
+  ]
+}

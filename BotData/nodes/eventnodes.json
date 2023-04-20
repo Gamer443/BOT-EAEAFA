@@ -1,0 +1,3774 @@
+{
+  "nodes": [
+    {
+      "type": "event",
+      "name": "User Joins Server",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "newuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "c1c79f17-d425-4159-ad46-4dc11ae6b5b2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 99,
+      "y": 90,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Any Message",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888",
+      "variables": {},
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "e60736ac-02e5-4eee-974a-3b5cb994d3ad"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 101,
+      "y": 400,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Kicked",
+      "guid": "69ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "kickuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 99,
+      "y": 200,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Banned",
+      "guid": "77ebbc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "banuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 300,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Bot Initialization",
+      "guid": "0101bc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {},
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 500,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Create",
+      "guid": "3333bc23-2993-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "channel": "createdchannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 610,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Delete",
+      "guid": "3387bc23-2993-4f05-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "deletedchannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 720,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Pins Update",
+      "guid": "1287bc23-2993-dudu-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "updatepinschannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 830,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Update",
+      "guid": "0009zzv3-2993-dudu-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "updatechannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 940,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Create",
+      "guid": "0008zzv3-2993-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "createdemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1050,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Delete",
+      "guid": "0028zzv3-2993-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "deletedemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1160,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Update",
+      "guid": "1128zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "updatedemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1270,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Ban Remove",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1370,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Create",
+      "guid": "0909zzv3-2773-dudu-3456-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1480,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Delete",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1590,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Available",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1700,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Speaking",
+      "guid": "09uuuiv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1810,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Update",
+      "guid": "0yyuuiv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1920,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Unavailable",
+      "guid": "0yyuukkk-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2030,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Update",
+      "guid": "0yyuukkk-2773-dudu-ab69-bc9h9890202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2140,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Message Delete",
+      "guid": "0y111112-2773-dudu-ab69-bc9h9890202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2250,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Message Update",
+      "guid": "0y111112-2773-dudu-ab69-bc9h9333202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2360,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Create",
+      "guid": "0y111112-2773-d44u-ab69-bc9h9333202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2470,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Delete",
+      "guid": "0y111112-2773-d44u-ab69-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2580,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Update",
+      "guid": "0y111pg2-2773-d44u-ayu9-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2690,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Typing Start",
+      "guid": "0y1737g2-2773-d44u-ayu9-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2800,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Update",
+      "guid": "0y1737g2-2773-d44u-ayu9-b5555tttyt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2910,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Button Interaction",
+      "guid": "0y1700g2-2773-d44u-ayu9-b5555886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "e026af11-70ae-4460-9b05-87249b288f65",
+            "8d127101-e127-4648-90f4-ca420283a634"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 3020,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Select Interaction",
+      "guid": "0y17qzg2-2773-pp4u-ayu9-b55q4886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 99,
+      "y": 3127,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Command Interaction",
+      "guid": "0y17nnm2-2773-pp4u-ayu9-b55q4886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "d4722ac6-1926-4296-98aa-5fe0320c4d78",
+            "c2efda88-c692-4e7d-b466-9ac07c6aa5cb",
+            "8730f627-3823-4711-a91c-4cb9b22f21f7"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 103,
+      "y": 3252,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "Moderation",
+      "guid": "d4722ac6-1926-4296-98aa-5fe0320c4d78",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "kick",
+          "connections": [
+            "376eae4b-6233-444a-b21b-a2b28e0d8585"
+          ]
+        },
+        {
+          "label": "ban",
+          "connections": [
+            "74768317-d5b6-45e6-b415-b5a1613b6598"
+          ]
+        },
+        {
+          "label": "mute",
+          "connections": [
+            "4bed0c87-803f-4a75-a2f5-7def59ad0c16"
+          ]
+        },
+        {
+          "label": "unmute",
+          "connections": [
+            "923971b1-2fd1-4c61-b702-6a30af08a5bd"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y17nnm2-2773-pp4u-ayu9-b55q4886yt2e"
+        }
+      ],
+      "x": 449,
+      "y": 3262,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.commandinteraction.commandName}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2",
+        "switchvalue3",
+        "switchvalue4"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "kick",
+        "ban",
+        "mute",
+        "unmute"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "get_username-mute",
+      "guid": "4bed0c87-803f-4a75-a2f5-7def59ad0c16",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "488313f0-6921-4aaa-89dc-e1b6c8ea9aca"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d4722ac6-1926-4296-98aa-5fe0320c4d78"
+        }
+      ],
+      "x": 637,
+      "y": 3421,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "username",
+        "usermute",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-reason-mute",
+      "guid": "488313f0-6921-4aaa-89dc-e1b6c8ea9aca",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "bd9b6866-43c1-4291-8835-037162a44243"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4bed0c87-803f-4a75-a2f5-7def59ad0c16"
+        }
+      ],
+      "x": 800,
+      "y": 3423,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "reason",
+        "reasonmute",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "remove-other-roles",
+      "guid": "bd9b6866-43c1-4291-8835-037162a44243",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "69264eda-5621-44f9-8310-9e968db0891c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "488313f0-6921-4aaa-89dc-e1b6c8ea9aca"
+        }
+      ],
+      "x": 965,
+      "y": 3429,
+      "rtype": "User Action",
+      "rsubtype": "Remove Role From User",
+      "formdata": [
+        "${tempVars.usermute}",
+        "1079369496453718024",
+        "--"
+      ],
+      "formnames": [
+        "user",
+        "roleName",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "remove-other-roles_1",
+      "guid": "69264eda-5621-44f9-8310-9e968db0891c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f598a2b2-d65e-44ef-9f5e-5e6e7a61562b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "bd9b6866-43c1-4291-8835-037162a44243"
+        }
+      ],
+      "x": 1131,
+      "y": 3438,
+      "rtype": "User Action",
+      "rsubtype": "Remove Role From User",
+      "formdata": [
+        "${tempVars.usermute}",
+        "1079369496453718025",
+        "--"
+      ],
+      "formnames": [
+        "user",
+        "roleName",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "add-mute",
+      "guid": "f598a2b2-d65e-44ef-9f5e-5e6e7a61562b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "296d8c71-6003-4c93-8d9a-9d7f4e350740"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "69264eda-5621-44f9-8310-9e968db0891c"
+        }
+      ],
+      "x": 1293,
+      "y": 3447,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.usermute}",
+        "1079416155950821428"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "mute-log",
+      "guid": "296d8c71-6003-4c93-8d9a-9d7f4e350740",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ca1b636f-f561-457b-81c7-0b4db53ec91a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f598a2b2-d65e-44ef-9f5e-5e6e7a61562b"
+        }
+      ],
+      "x": 1457,
+      "y": 3450,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1084885980399554591",
+        "FF0000",
+        "User got Muted",
+        "",
+        "",
+        "",
+        "",
+        "Der User : \"${tempVars.usermute}\" wurde mit dem Grund : \"${tempVars.reasonmute}\" gemuted",
+        "",
+        "",
+        "Gamer443 - Bot ",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-mute",
+      "guid": "ca1b636f-f561-457b-81c7-0b4db53ec91a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "296d8c71-6003-4c93-8d9a-9d7f4e350740"
+        }
+      ],
+      "x": 1620,
+      "y": 3457,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "Der User ${tempVars.usermute} wurde mit dem Grund ${tempVars.reasonmute} gemuted ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-user-kick",
+      "guid": "376eae4b-6233-444a-b21b-a2b28e0d8585",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "d1e20725-9f08-4454-8e0a-a1d82ce20680"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d4722ac6-1926-4296-98aa-5fe0320c4d78"
+        }
+      ],
+      "x": 638,
+      "y": 3184,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "username",
+        "userkick",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-reason-kick",
+      "guid": "d1e20725-9f08-4454-8e0a-a1d82ce20680",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "9323d9b3-55cf-484d-9f76-cbb718713aae"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "376eae4b-6233-444a-b21b-a2b28e0d8585"
+        }
+      ],
+      "x": 814,
+      "y": 3188,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "reason",
+        "reasonkick",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "kick-user",
+      "guid": "9323d9b3-55cf-484d-9f76-cbb718713aae",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "6b1bbd06-ee8f-463c-8146-447b2e5745de"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d1e20725-9f08-4454-8e0a-a1d82ce20680"
+        }
+      ],
+      "x": 992,
+      "y": 3196,
+      "rtype": "User Action",
+      "rsubtype": "Kick User",
+      "formdata": [
+        "${tempVars.userkick}",
+        "${tempVars.reasonkick}"
+      ],
+      "formnames": [
+        "user",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "kick-log",
+      "guid": "6b1bbd06-ee8f-463c-8146-447b2e5745de",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "774ffa4f-fd7f-4bd2-bec5-55074b511b9d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "9323d9b3-55cf-484d-9f76-cbb718713aae"
+        }
+      ],
+      "x": 1168,
+      "y": 3202,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1084885980399554591",
+        "00FF00",
+        "User got kicked",
+        "",
+        "",
+        "",
+        "",
+        "Der User : \"${tempVars.userkick}\" wurde mit dem Grund : \"\"${tempVars.reasonkick} gekickt !",
+        "",
+        "",
+        "Gamer443 - Bot",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-kick",
+      "guid": "774ffa4f-fd7f-4bd2-bec5-55074b511b9d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6b1bbd06-ee8f-463c-8146-447b2e5745de"
+        }
+      ],
+      "x": 1341,
+      "y": 3206,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "Der User ${tempVars.userkick} wurde erfolgreich gekickt ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-username-unmute",
+      "guid": "923971b1-2fd1-4c61-b702-6a30af08a5bd",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "d1021be9-e0ff-4adf-984c-a2d4af04b074"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d4722ac6-1926-4296-98aa-5fe0320c4d78"
+        }
+      ],
+      "x": 632,
+      "y": 3566,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "username",
+        "userunmute",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "remove-mute",
+      "guid": "d1021be9-e0ff-4adf-984c-a2d4af04b074",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "438a313b-adf2-46cd-8094-e36f2f7df67e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "923971b1-2fd1-4c61-b702-6a30af08a5bd"
+        }
+      ],
+      "x": 802,
+      "y": 3575,
+      "rtype": "User Action",
+      "rsubtype": "Remove Role From User",
+      "formdata": [
+        "${tempVars.userunmute}",
+        "1079416155950821428",
+        "--"
+      ],
+      "formnames": [
+        "user",
+        "roleName",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "add-other",
+      "guid": "438a313b-adf2-46cd-8094-e36f2f7df67e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "643ee7f6-85e0-4883-b9d5-755eecb71b81"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d1021be9-e0ff-4adf-984c-a2d4af04b074"
+        }
+      ],
+      "x": 970,
+      "y": 3589,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.userunmute}",
+        "1079369496453718024"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "unmute-log",
+      "guid": "643ee7f6-85e0-4883-b9d5-755eecb71b81",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "3f0b69ef-18b9-48d8-9cba-757ac62a7e66"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "438a313b-adf2-46cd-8094-e36f2f7df67e"
+        }
+      ],
+      "x": 1137,
+      "y": 3595,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1084885980399554591",
+        "00FF00",
+        "User got Unmuted !",
+        "",
+        "",
+        "",
+        "",
+        "Die Stummschaltung des Users : \"${tempVars.userunmute}\" wurde aufgehoben.",
+        "",
+        "",
+        "Gamer443 - Bot",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-unmute",
+      "guid": "3f0b69ef-18b9-48d8-9cba-757ac62a7e66",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "643ee7f6-85e0-4883-b9d5-755eecb71b81"
+        }
+      ],
+      "x": 1308,
+      "y": 3600,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "Der User ${tempVars.userunmute} wurde erfolgreich entmuted ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-user-ban",
+      "guid": "74768317-d5b6-45e6-b415-b5a1613b6598",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "fa6283e7-9bce-44ed-b65c-b1f8ea309ba0"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d4722ac6-1926-4296-98aa-5fe0320c4d78"
+        }
+      ],
+      "x": 640,
+      "y": 3298,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "username",
+        "userban",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-reason-ban",
+      "guid": "fa6283e7-9bce-44ed-b65c-b1f8ea309ba0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "61d2e242-6f49-45da-842d-e6a552944165"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "74768317-d5b6-45e6-b415-b5a1613b6598"
+        }
+      ],
+      "x": 816,
+      "y": 3303,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "reason",
+        "reasonban",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-time-ban",
+      "guid": "61d2e242-6f49-45da-842d-e6a552944165",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "dcb1d4cf-62d5-47f2-af7f-1a3565e6aebd"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fa6283e7-9bce-44ed-b65c-b1f8ea309ba0"
+        }
+      ],
+      "x": 994,
+      "y": 3307,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "time",
+        "timeban",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ban-user",
+      "guid": "dcb1d4cf-62d5-47f2-af7f-1a3565e6aebd",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f8702711-bda3-4c90-ae78-c6bf8405cfe2"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "61d2e242-6f49-45da-842d-e6a552944165"
+        }
+      ],
+      "x": 1168,
+      "y": 3314,
+      "rtype": "User Action",
+      "rsubtype": "Ban User",
+      "formdata": [
+        "${tempVars.userban}",
+        "${tempVars.reasonban}",
+        "${tempVars.timeban}"
+      ],
+      "formnames": [
+        "user",
+        "reason",
+        "days"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ban-log",
+      "guid": "f8702711-bda3-4c90-ae78-c6bf8405cfe2",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "037ec26d-da61-48e1-bb2f-6e7fb8f8986f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "dcb1d4cf-62d5-47f2-af7f-1a3565e6aebd"
+        }
+      ],
+      "x": 1344,
+      "y": 3320,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1084885980399554591",
+        "00FF00",
+        "User got Banned",
+        "",
+        "",
+        "",
+        "",
+        "Der Nutzer : \"${tempVars.userban} wurde für ${tempVars.timeban} Tage gebannt, mit dem Grund : \"${tempVars.reasonban}\"",
+        "",
+        "",
+        "Gamer443- Bot",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-ban",
+      "guid": "037ec26d-da61-48e1-bb2f-6e7fb8f8986f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f8702711-bda3-4c90-ae78-c6bf8405cfe2"
+        }
+      ],
+      "x": 1515,
+      "y": 3325,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "Der User ${tempVars.userban} wurde erfolgreich gebannt ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Bot",
+      "guid": "c2efda88-c692-4e7d-b466-9ac07c6aa5cb",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "clear",
+          "connections": [
+            "a4c1a233-8d0d-46dc-ba47-2030d5fff7f1"
+          ]
+        },
+        {
+          "label": "botactivity",
+          "connections": [
+            "7438d279-c2d6-4506-8e28-4677c69c7fa0"
+          ]
+        },
+        {
+          "label": "react",
+          "connections": [
+            "565a9ff7-afa3-4f17-9ae1-d393445c9d85"
+          ]
+        },
+        {
+          "label": "ticketsetup",
+          "connections": [
+            "d737d634-325a-4012-9fa3-66f6d50b9ee9"
+          ]
+        },
+        {
+          "label": "help",
+          "connections": [
+            "2a8e553d-998b-423e-8470-4ff542b42a32"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y17nnm2-2773-pp4u-ayu9-b55q4886yt2e"
+        }
+      ],
+      "x": 452,
+      "y": 3828,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.commandinteraction.commandName}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2",
+        "switchvalue3",
+        "switchvalue4",
+        "switchvalue5"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "clear",
+        "botactivity",
+        "react",
+        "ticketsetup",
+        "help"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "get-activity",
+      "guid": "7438d279-c2d6-4506-8e28-4677c69c7fa0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "5a01d076-a9f7-4933-8f83-7bda9ff7a780"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2efda88-c692-4e7d-b466-9ac07c6aa5cb"
+        }
+      ],
+      "x": 645,
+      "y": 3922,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "activity",
+        "botactivity",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "set-activtiy",
+      "guid": "5a01d076-a9f7-4933-8f83-7bda9ff7a780",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8800d8c2-7837-47e2-b8d5-7b0846faf325"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7438d279-c2d6-4506-8e28-4677c69c7fa0"
+        }
+      ],
+      "x": 814,
+      "y": 3927,
+      "rtype": "Bot Action",
+      "rsubtype": "Set Bot Activity",
+      "formdata": [
+        "${tempVars.botactivity}",
+        "PLAYING",
+        ""
+      ],
+      "formnames": [
+        "activityname",
+        "activitytype",
+        "streamurl"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-activtiy",
+      "guid": "8800d8c2-7837-47e2-b8d5-7b0846faf325",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5a01d076-a9f7-4933-8f83-7bda9ff7a780"
+        }
+      ],
+      "x": 987,
+      "y": 3938,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "Die Botactivity wurde erfolreich auf  ${tempVars.botactivity} geändert ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "welcome-message",
+      "guid": "c1c79f17-d425-4159-ad46-4dc11ae6b5b2",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "67cd2c21-8b9d-48ae-8ce3-2bc57ac12eec"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e"
+        }
+      ],
+      "x": 299,
+      "y": 82,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1097872135814385744",
+        "00FF00",
+        "Willkommen!",
+        "",
+        "",
+        "",
+        "",
+        "Hey <@${tempVars.newuser.id}>, willkommen auf dem Gamer443 Discord Serer !\nWir wünschen dir viel Spaß 🤝",
+        "",
+        "",
+        "Gamer443-Bot | /help",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "add-member-role",
+      "guid": "67cd2c21-8b9d-48ae-8ce3-2bc57ac12eec",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c1c79f17-d425-4159-ad46-4dc11ae6b5b2"
+        }
+      ],
+      "x": 480,
+      "y": 89,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.newuser.id}",
+        "1079369496453718024"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-amount-clear",
+      "guid": "a4c1a233-8d0d-46dc-ba47-2030d5fff7f1",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "e6278989-76a9-4ac4-ad3b-745a74212733"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2efda88-c692-4e7d-b466-9ac07c6aa5cb"
+        }
+      ],
+      "x": 639,
+      "y": 3778,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "amount",
+        "amountclear",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-channel-clear",
+      "guid": "e6278989-76a9-4ac4-ad3b-745a74212733",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "2de47e1c-a8fe-4fe6-be11-1f28044cd153"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a4c1a233-8d0d-46dc-ba47-2030d5fff7f1"
+        }
+      ],
+      "x": 813,
+      "y": 3779,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "channel",
+        "channelclear",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "delete-messages-clear",
+      "guid": "2de47e1c-a8fe-4fe6-be11-1f28044cd153",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "59d085a2-1ac5-43fc-8a39-c55ad58f7726"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e6278989-76a9-4ac4-ad3b-745a74212733"
+        }
+      ],
+      "x": 986,
+      "y": 3785,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "${tempVars.channelclear}",
+        "${tempVars.amountclear}"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "delete_clear",
+      "guid": "50d57790-bf36-48fe-b1b0-5a2f1422213f",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "59d085a2-1ac5-43fc-8a39-c55ad58f7726"
+        }
+      ],
+      "x": 1332,
+      "y": 3809,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "clear-log",
+      "guid": "59d085a2-1ac5-43fc-8a39-c55ad58f7726",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "50d57790-bf36-48fe-b1b0-5a2f1422213f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2de47e1c-a8fe-4fe6-be11-1f28044cd153"
+        }
+      ],
+      "x": 1156,
+      "y": 3803,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1084885980399554591",
+        "00FF00",
+        "Channel got cleared",
+        "",
+        "",
+        "",
+        "",
+        "Es wurden vermutlich ${tempVars.amountclear} Narichten aus ${tempVars.channelclear} entfernt",
+        "",
+        "",
+        "Gamer443 - Bot",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "start-typing",
+      "guid": "822dc716-377c-4c4b-8f9b-614cd84f3521",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1737g2-2773-d44u-ayu9-b5555633202e"
+        }
+      ],
+      "x": -61,
+      "y": 2785,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.typingstartchannel.id}",
+        "Schneller <@${tempVars.typingstartuser.id}>, wir warten 🤗",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Fun",
+      "guid": "8730f627-3823-4711-a91c-4cb9b22f21f7",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "rate",
+          "connections": [
+            "b32f67b6-4c03-42b2-a321-0dbef36367e9"
+          ]
+        },
+        {
+          "label": "rank",
+          "connections": [
+            "bfece77e-c31d-4472-b542-a6179aa31269"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y17nnm2-2773-pp4u-ayu9-b55q4886yt2e"
+        }
+      ],
+      "x": 446,
+      "y": 4267,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.commandinteraction.commandName}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "rate",
+        "rank"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "send-react",
+      "guid": "565a9ff7-afa3-4f17-9ae1-d393445c9d85",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "News",
+          "value": "Reagiere mit \"📢\" um Pings für News zu erhalten.",
+          "inline": "false"
+        },
+        {
+          "name": "Umfragen",
+          "value": "Reagiere mit \"📊\" um Pings für Umfragen zu erhalten.",
+          "inline": "false"
+        },
+        {
+          "name": "Giveaways",
+          "value": "Reagiere mit \"🎁\" um Pings für Giveaways zu erhalten.",
+          "inline": "true"
+        }
+      ],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2efda88-c692-4e7d-b466-9ac07c6aa5cb"
+        }
+      ],
+      "x": 798,
+      "y": 4040,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1098118779545849926",
+        "00FF00",
+        "Reaction menü",
+        "",
+        "",
+        "",
+        "",
+        "Wähle aus, für welche \"Ereignisse\" du einen Ping bekommen möchtest.",
+        "",
+        "",
+        "Gamer443 - Bot |/help",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "News",
+              "customid": "newsping",
+              "style": "PRIMARY",
+              "emoji": "📢",
+              "URL": "",
+              "ephemeral": true
+            },
+            {
+              "label": "Umfragen",
+              "customid": "umfragenping",
+              "style": "PRIMARY",
+              "emoji": "📊",
+              "URL": "",
+              "ephemeral": true
+            },
+            {
+              "label": "Giveaways",
+              "customid": "giveawayping",
+              "style": "PRIMARY",
+              "emoji": "🎁",
+              "URL": "",
+              "ephemeral": true
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reaction-menu",
+      "guid": "e026af11-70ae-4460-9b05-87249b288f65",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "newsping",
+          "connections": [
+            "a740f6a3-e009-41af-a741-d2f65b5f3a3f"
+          ]
+        },
+        {
+          "label": "umfragenping",
+          "connections": [
+            "c03a06e6-1c02-44ef-9202-9a382830f503"
+          ]
+        },
+        {
+          "label": "giveawayping",
+          "connections": [
+            "aed33e7b-f3bc-4de6-a7f8-28985a4e2415"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 457,
+      "y": 2736,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2",
+        "switchvalue3"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "newsping",
+        "umfragenping",
+        "giveawayping"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "check-news-role",
+      "guid": "a740f6a3-e009-41af-a741-d2f65b5f3a3f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "4d9d7697-cda7-4c7f-98fd-87c6de422836"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "c391bd76-895a-4b41-93d1-f43a6301f963"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e026af11-70ae-4460-9b05-87249b288f65"
+        }
+      ],
+      "x": 471,
+      "y": 2458,
+      "rtype": "User Action",
+      "rsubtype": "Check If User Has Role",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416584071827476"
+      ],
+      "formnames": [
+        "user",
+        "role"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "add-news",
+      "guid": "c391bd76-895a-4b41-93d1-f43a6301f963",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "80ae6982-c511-4518-8996-647be1115a33"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a740f6a3-e009-41af-a741-d2f65b5f3a3f"
+        }
+      ],
+      "x": 637,
+      "y": 2570,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416584071827476"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-news-interaction",
+      "guid": "dce09da4-3f36-41f6-b7bf-dc636ed7171e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4d9d7697-cda7-4c7f-98fd-87c6de422836"
+        }
+      ],
+      "x": 804,
+      "y": 2451,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Die Rolle wurde erfolgreich entfernt ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-news-interaction_1",
+      "guid": "80ae6982-c511-4518-8996-647be1115a33",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c391bd76-895a-4b41-93d1-f43a6301f963"
+        }
+      ],
+      "x": 806,
+      "y": 2590,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Die Rolle wurde erfolgreich hinzugefügt ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "remove-news",
+      "guid": "4d9d7697-cda7-4c7f-98fd-87c6de422836",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "dce09da4-3f36-41f6-b7bf-dc636ed7171e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a740f6a3-e009-41af-a741-d2f65b5f3a3f"
+        }
+      ],
+      "x": 638,
+      "y": 2450,
+      "rtype": "User Action",
+      "rsubtype": "Remove Role From User",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416584071827476",
+        "--"
+      ],
+      "formnames": [
+        "user",
+        "roleName",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "check-umfragen-ping",
+      "guid": "c03a06e6-1c02-44ef-9202-9a382830f503",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "952c6dcf-824d-4d7f-9841-33708d1f5d01"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "dcb0ae4d-3ad4-422c-8fa5-07aa3c1bde2c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e026af11-70ae-4460-9b05-87249b288f65"
+        }
+      ],
+      "x": 1027,
+      "y": 2766,
+      "rtype": "User Action",
+      "rsubtype": "Check If User Has Role",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416694478475365"
+      ],
+      "formnames": [
+        "user",
+        "role"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "remove-umfragen",
+      "guid": "952c6dcf-824d-4d7f-9841-33708d1f5d01",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ca388341-0c16-498b-83eb-8190c03fecc0"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c03a06e6-1c02-44ef-9202-9a382830f503"
+        }
+      ],
+      "x": 1237,
+      "y": 2701,
+      "rtype": "User Action",
+      "rsubtype": "Remove Role From User",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416694478475365",
+        "--"
+      ],
+      "formnames": [
+        "user",
+        "roleName",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-umfragen-reaction",
+      "guid": "ca388341-0c16-498b-83eb-8190c03fecc0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "952c6dcf-824d-4d7f-9841-33708d1f5d01"
+        }
+      ],
+      "x": 1419,
+      "y": 2700,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Die Rolle wurde erfolgreich entfernt ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "add-umfragen",
+      "guid": "dcb0ae4d-3ad4-422c-8fa5-07aa3c1bde2c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "375a204a-acc6-4bd1-939c-0f65136a0b75"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c03a06e6-1c02-44ef-9202-9a382830f503"
+        }
+      ],
+      "x": 1237,
+      "y": 2858,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416694478475365"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-umfragen-reaction_1",
+      "guid": "375a204a-acc6-4bd1-939c-0f65136a0b75",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "dcb0ae4d-3ad4-422c-8fa5-07aa3c1bde2c"
+        }
+      ],
+      "x": 1413,
+      "y": 2866,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Die Rolle wurde erfolgreich hinzugefügt ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "check-giveaway-ping",
+      "guid": "aed33e7b-f3bc-4de6-a7f8-28985a4e2415",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "cfabea89-1802-4994-be8c-f92011fed5a0"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "93b02834-348c-486f-9ad5-79d7ec98eb74"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e026af11-70ae-4460-9b05-87249b288f65"
+        }
+      ],
+      "x": 464,
+      "y": 2928,
+      "rtype": "User Action",
+      "rsubtype": "Check If User Has Role",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416757011361822"
+      ],
+      "formnames": [
+        "user",
+        "role"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "remove-giveaways",
+      "guid": "cfabea89-1802-4994-be8c-f92011fed5a0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "817597b8-a2f8-4355-bc62-763a30dc65aa"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "aed33e7b-f3bc-4de6-a7f8-28985a4e2415"
+        }
+      ],
+      "x": 636,
+      "y": 2896,
+      "rtype": "User Action",
+      "rsubtype": "Remove Role From User",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416757011361822",
+        "--"
+      ],
+      "formnames": [
+        "user",
+        "roleName",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "add-giveaways",
+      "guid": "93b02834-348c-486f-9ad5-79d7ec98eb74",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "3bbf7f66-eed3-4531-a690-5cea13fb7259"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "aed33e7b-f3bc-4de6-a7f8-28985a4e2415"
+        }
+      ],
+      "x": 637,
+      "y": 3041,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1079416757011361822"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-giveaway-interaction",
+      "guid": "817597b8-a2f8-4355-bc62-763a30dc65aa",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "cfabea89-1802-4994-be8c-f92011fed5a0"
+        }
+      ],
+      "x": 822,
+      "y": 2905,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Die Rolle wurde erfolgreich entfernt ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-giveaway-interaction_1",
+      "guid": "3bbf7f66-eed3-4531-a690-5cea13fb7259",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "93b02834-348c-486f-9ad5-79d7ec98eb74"
+        }
+      ],
+      "x": 825,
+      "y": 3044,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Die Rolle wurde erfolgreich hinzugefügt ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-user-rate",
+      "guid": "b32f67b6-4c03-42b2-a321-0dbef36367e9",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "73c71553-b68d-4f23-928d-3cfd8705a0cb"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8730f627-3823-4711-a91c-4cb9b22f21f7"
+        }
+      ],
+      "x": 635,
+      "y": 4271,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "STRING",
+        "username",
+        "userrate",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "generate-rate",
+      "guid": "73c71553-b68d-4f23-928d-3cfd8705a0cb",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f297fa73-6d18-41a9-ad3c-391b9595ee26"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b32f67b6-4c03-42b2-a321-0dbef36367e9"
+        }
+      ],
+      "x": 813,
+      "y": 4273,
+      "rtype": "Variable",
+      "rsubtype": "Generate Random Number",
+      "formdata": [
+        "rateamount",
+        "1",
+        "100",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "min",
+        "max",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-rate",
+      "guid": "f297fa73-6d18-41a9-ad3c-391b9595ee26",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "73c71553-b68d-4f23-928d-3cfd8705a0cb"
+        }
+      ],
+      "x": 993,
+      "y": 4279,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "Der User ist ${tempVars.rateamount}% cool !"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ticket-embed",
+      "guid": "d737d634-325a-4012-9fa3-66f6d50b9ee9",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "388f5b23-4d7b-4a63-8671-b6002870a57c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2efda88-c692-4e7d-b466-9ac07c6aa5cb"
+        }
+      ],
+      "x": 809,
+      "y": 4157,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1097878004551663706",
+        "00FF00",
+        "Support - Ticket",
+        "",
+        "",
+        "",
+        "",
+        "Öffne ein Ticket mit der Schaltfläche unter dieser Naricht !",
+        "",
+        "",
+        "Gamer443 - Bot | /help",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "Ticket öffnen",
+              "customid": "ticketopen",
+              "style": "PRIMARY",
+              "emoji": "🔔",
+              "URL": "",
+              "ephemeral": true
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ticket-system",
+      "guid": "8d127101-e127-4648-90f4-ca420283a634",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "ticketopen",
+          "connections": [
+            "a2234c8e-c927-4baa-960d-876f94755393"
+          ]
+        },
+        {
+          "label": "close-ticket",
+          "connections": [
+            "59bc7203-6e98-4a2a-9237-a7b9a1f81299"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 456,
+      "y": 2219,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "ticketopen",
+        "close-ticket"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "ticket-perms",
+      "guid": "198a8392-e396-4d4e-9495-a56b7bb0183d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "621cb844-e640-407f-b8b3-7f5eca16f547"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8198f66b-7784-41b6-b54b-867b13a75a20"
+        }
+      ],
+      "x": 822,
+      "y": 2227,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "1079369496453718024",
+        [
+          "ADD_REACTIONS",
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ticket-perms_1",
+      "guid": "621cb844-e640-407f-b8b3-7f5eca16f547",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b402caa7-8339-46f5-befc-0a73ccb164b2"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "198a8392-e396-4d4e-9495-a56b7bb0183d"
+        }
+      ],
+      "x": 1000,
+      "y": 2222,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "${tempVars.buttoninteraction.member.id}",
+        [
+          "ADD_REACTIONS",
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ticket-perms_2",
+      "guid": "b402caa7-8339-46f5-befc-0a73ccb164b2",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "25e4e36e-b1d1-4998-a23f-7dce4d2cb489"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "621cb844-e640-407f-b8b3-7f5eca16f547"
+        }
+      ],
+      "x": 1175,
+      "y": 2226,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "1079369496474697839",
+        [
+          "ADD_REACTIONS",
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ticket-perms_3",
+      "guid": "25e4e36e-b1d1-4998-a23f-7dce4d2cb489",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "3b3e1ca2-a385-4fbe-9316-c0b58f4d5923"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b402caa7-8339-46f5-befc-0a73ccb164b2"
+        }
+      ],
+      "x": 1346,
+      "y": 2228,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "1079369496474697840",
+        [
+          "ADD_REACTIONS",
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "create-ticket",
+      "guid": "a2234c8e-c927-4baa-960d-876f94755393",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "ticketchannel",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8198f66b-7784-41b6-b54b-867b13a75a20"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8d127101-e127-4648-90f4-ca420283a634"
+        }
+      ],
+      "x": 639,
+      "y": 2223,
+      "rtype": "Channel Action",
+      "rsubtype": "Create Channel",
+      "formdata": [
+        "ticket-${tempVars.buttoninteraction.member.displayName}",
+        "Support",
+        "",
+        "Text",
+        "ticketchannel",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "chancategory",
+        "reason",
+        "channeltype",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "delete-ticket-setup",
+      "guid": "388f5b23-4d7b-4a63-8671-b6002870a57c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d737d634-325a-4012-9fa3-66f6d50b9ee9"
+        }
+      ],
+      "x": 1012,
+      "y": 4111,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.commandinteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "wait1sec",
+      "guid": "8198f66b-7784-41b6-b54b-867b13a75a20",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "198a8392-e396-4d4e-9495-a56b7bb0183d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a2234c8e-c927-4baa-960d-876f94755393"
+        }
+      ],
+      "x": 635,
+      "y": 2090,
+      "rtype": "Control",
+      "rsubtype": "Wait",
+      "formdata": [
+        "1",
+        "seconds"
+      ],
+      "formnames": [
+        "waitduration",
+        "unit"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "send-ticket-embed",
+      "guid": "3b3e1ca2-a385-4fbe-9316-c0b58f4d5923",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "5e143d0d-b240-4ec7-8921-9215d284cc2f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "25e4e36e-b1d1-4998-a23f-7dce4d2cb489"
+        }
+      ],
+      "x": 1527,
+      "y": 2211,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "00FF00",
+        "Ticket-System",
+        "",
+        "",
+        "",
+        "",
+        "Wähle eine Aktion aus !\n----------\nEin Team-Member wird sich gleich um dich Kümmern, beschreibe dein Problem und Pinge notfalls ein Team-Mitglied !",
+        "",
+        "",
+        "Gamer443-Bot |/help",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "Close Ticket",
+              "customid": "close-ticket",
+              "style": "DANGER",
+              "emoji": "",
+              "URL": "",
+              "ephemeral": false
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-ticket-open",
+      "guid": "5e143d0d-b240-4ec7-8921-9215d284cc2f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3b3e1ca2-a385-4fbe-9316-c0b58f4d5923"
+        }
+      ],
+      "x": 1703,
+      "y": 2219,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "Dein Ticket findest du hier -> <#${tempVars.ticketchannel.id}>"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "delete-ticket",
+      "guid": "59bc7203-6e98-4a2a-9237-a7b9a1f81299",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "1a286e3e-88da-43d1-a002-16f65dcfa39d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8d127101-e127-4648-90f4-ca420283a634"
+        }
+      ],
+      "x": 634,
+      "y": 2335,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete Channel",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "--"
+      ],
+      "formnames": [
+        "channelname",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ticket-close-log",
+      "guid": "1a286e3e-88da-43d1-a002-16f65dcfa39d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "59bc7203-6e98-4a2a-9237-a7b9a1f81299"
+        }
+      ],
+      "x": 820,
+      "y": 2339,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1084885980399554591",
+        "00FF00",
+        "Ticket got Close",
+        "",
+        "",
+        "",
+        "",
+        "Es wurde ein Ticket geschloßen !",
+        "",
+        "",
+        "Gamer443 - Bot",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "add-xp",
+      "guid": "ac7b45e6-561a-4ec3-9d2f-c35cef7a03c5",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e60736ac-02e5-4eee-974a-3b5cb994d3ad"
+        }
+      ],
+      "x": 502,
+      "y": 391,
+      "rtype": "User Data",
+      "rsubtype": "Edit User Data",
+      "formdata": [
+        "${tempVars.anymessagemember.id}",
+        "xp",
+        "+",
+        "${tempVars.xpdata}"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "oper",
+        "value"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "generate-xp",
+      "guid": "e60736ac-02e5-4eee-974a-3b5cb994d3ad",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ac7b45e6-561a-4ec3-9d2f-c35cef7a03c5"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
+        }
+      ],
+      "x": 304,
+      "y": 381,
+      "rtype": "Variable",
+      "rsubtype": "Generate Random Number",
+      "formdata": [
+        "xpdata",
+        "1",
+        "3",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "min",
+        "max",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-rank",
+      "guid": "d42a8487-2be0-4526-8ac3-190822cfc02f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "bfece77e-c31d-4472-b542-a6179aa31269"
+        }
+      ],
+      "x": 826,
+      "y": 4399,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "Deine aktuelle XP Anzahl liegt bei : ${tempVars.xprank}"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "get-xp",
+      "guid": "bfece77e-c31d-4472-b542-a6179aa31269",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "xprank",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "d42a8487-2be0-4526-8ac3-190822cfc02f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8730f627-3823-4711-a91c-4cb9b22f21f7"
+        }
+      ],
+      "x": 625,
+      "y": 4399,
+      "rtype": "User Data",
+      "rsubtype": "Get User Data",
+      "formdata": [
+        "${tempVars.commandinteraction.member.id}",
+        "xp",
+        "xprank",
+        "temp",
+        "User"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "varname",
+        "saveVarType",
+        "vartype"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "help-menu",
+      "guid": "2a8e553d-998b-423e-8470-4ff542b42a32",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "/help",
+          "value": "Öffnet dieses Menu !",
+          "inline": "false"
+        },
+        {
+          "name": "/rank",
+          "value": "Lasse dir deine aktuelle XP Anzahl anzeigen",
+          "inline": "false"
+        },
+        {
+          "name": "/rate",
+          "value": "Lasse den Bot einen User Bewerten [Alles wird Random generiert, der Bot mag jeden !]",
+          "inline": "false"
+        }
+      ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "253d6315-a3fe-4478-925b-25d86215b385"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c2efda88-c692-4e7d-b466-9ac07c6aa5cb"
+        }
+      ],
+      "x": 471,
+      "y": 4107,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1097875855428034570",
+        "00FF00",
+        "Help - Menu",
+        "",
+        "",
+        "",
+        "",
+        "Hier findest du das Help - Menu !",
+        "",
+        "",
+        "Gamer443 - Bot",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-help",
+      "guid": "253d6315-a3fe-4478-925b-25d86215b385",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2a8e553d-998b-423e-8470-4ff542b42a32"
+        }
+      ],
+      "x": 636,
+      "y": 4107,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "Das Help Menu wurde erfolgreich in Bot-Commands gesendet, da nur dort sowas hingehört ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    }
+  ]
+}

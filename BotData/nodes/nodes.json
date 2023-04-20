@@ -1,0 +1,288 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "7942fe4c-dffa-4146-8cab-d254b3d80d5d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "37eda463-a170-44f9-af54-61378ffc9294"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 148,
+      "y": 188
+    },
+    {
+      "type": "response",
+      "name": "help menu",
+      "guid": "37eda463-a170-44f9-af54-61378ffc9294",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
+        }
+      ],
+      "x": 345,
+      "y": 182,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "00FF00",
+        "Help Menu",
+        "",
+        "",
+        "",
+        "",
+        "Wir arbeiten zu 99% mit Slash-Commands versuche doch mal /help ",
+        "",
+        "",
+        "Gamer443 - Bot | /help",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "slash",
+      "name": "kick",
+      "guid": "65f27219-74e2-449a-88ee-1514017ffbe5",
+      "outputs": [],
+      "inputs": [],
+      "x": 662,
+      "y": 164,
+      "description": "Ein einfacher Kick Command !",
+      "options": [
+        {
+          "name": "username",
+          "description": "Welchen User möchtest du Kicken ?",
+          "type": "USER",
+          "required": true
+        },
+        {
+          "name": "reason",
+          "description": "Warum möchtest du den Nutzer kicken ?",
+          "type": "STRING",
+          "required": false
+        }
+      ],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "ban",
+      "guid": "09a7d6ee-7caf-43c0-9177-df0599424cf3",
+      "outputs": [],
+      "inputs": [],
+      "x": 662,
+      "y": 301,
+      "description": "Ein einfacher Ban Command !",
+      "options": [
+        {
+          "name": "username",
+          "description": "Welchen User möchtest du Bannen ?",
+          "type": "STRING",
+          "required": true
+        },
+        {
+          "name": "reason",
+          "description": "Warum möchtest du den User Bannen ?",
+          "type": "STRING",
+          "required": false
+        },
+        {
+          "name": "time",
+          "description": "Wie lange soll der Nutzer gebannt werden ? [In Tagen] Bsp. (1)",
+          "type": "STRING",
+          "required": false
+        }
+      ],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "mute",
+      "guid": "c6a4c46b-92b2-4684-a1eb-35faab46ddd6",
+      "outputs": [],
+      "inputs": [],
+      "x": 828,
+      "y": 166,
+      "description": "Ein einfacher Mute command !",
+      "options": [
+        {
+          "name": "username",
+          "description": "Welchen User möchtest du Muten ?",
+          "type": "USER",
+          "required": true
+        },
+        {
+          "name": "reason",
+          "description": "Warum möchtest du den User Muten ? [Für den Log]",
+          "type": "STRING",
+          "required": false
+        }
+      ],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "unmute",
+      "guid": "028cf1d0-66ae-4dd9-9a8d-7b5e7c761041",
+      "outputs": [],
+      "inputs": [],
+      "x": 826,
+      "y": 301,
+      "description": "Ein einfacher Unmute command !",
+      "options": [
+        {
+          "name": "username",
+          "description": "Wenn möchtest du entmuten ?",
+          "type": "USER",
+          "required": true
+        }
+      ],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "botactivity",
+      "guid": "9e982206-9695-4230-91be-ba44396fa3f4",
+      "outputs": [],
+      "inputs": [],
+      "x": 668,
+      "y": 447,
+      "description": "Setze die Botactivity fest !",
+      "options": [
+        {
+          "name": "activity",
+          "description": "Welche activity soll der Bot haben ?",
+          "type": "STRING",
+          "required": true
+        }
+      ],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "clear",
+      "guid": "90657119-9197-437d-8b3f-209456c029d8",
+      "outputs": [],
+      "inputs": [],
+      "x": 832,
+      "y": 448,
+      "description": "Cleare Narichten in einem Channel, beachte das die Narichten nicht über 2 Wochen alt sein dürfen !",
+      "options": [
+        {
+          "name": "amount",
+          "description": "Wie viele Narichten möchtest du clearen [Max : 100]",
+          "type": "STRING",
+          "required": true
+        },
+        {
+          "name": "channel",
+          "description": "In welchem Channel möchtest du die Narichten clearen ?",
+          "type": "CHANNEL",
+          "required": true
+        }
+      ],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "react",
+      "guid": "dd22bafd-cb83-407a-9584-ce46c00123fd",
+      "outputs": [],
+      "inputs": [],
+      "x": 992,
+      "y": 170,
+      "description": "Send the reaction menu",
+      "options": [],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "rate",
+      "guid": "82c6f17e-e732-44e4-a8f6-be9846beeaa0",
+      "outputs": [],
+      "inputs": [],
+      "x": 997,
+      "y": 307,
+      "description": "Lasse den Bot einen User bewerten !",
+      "options": [
+        {
+          "name": "username",
+          "description": "Welchen User soll der Bot bewerten ?",
+          "type": "USER",
+          "required": true
+        }
+      ],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "ticketsetup",
+      "guid": "58c024fa-2bf4-4f1a-b0ce-5193f0016f30",
+      "outputs": [],
+      "inputs": [],
+      "x": 1003,
+      "y": 454,
+      "description": "Sende das Ticket-Menu",
+      "options": [],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "rank",
+      "guid": "249cab6d-b3fe-4b4b-8718-a6a85660704b",
+      "outputs": [],
+      "inputs": [],
+      "x": 1004,
+      "y": 599,
+      "description": "Frage deine aktuelle XP Anzahl ab !",
+      "options": [],
+      "ephemeral": false
+    },
+    {
+      "type": "slash",
+      "name": "help",
+      "guid": "2e4fe4a8-ca54-46e4-8890-67dfb4bc772a",
+      "outputs": [],
+      "inputs": [],
+      "x": 831,
+      "y": 600,
+      "description": "Lasse dir alle Commands anzeigen !",
+      "options": [],
+      "ephemeral": false
+    }
+  ]
+}

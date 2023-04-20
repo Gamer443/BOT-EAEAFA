@@ -1,0 +1,174 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "00FF00",
+          "title": "Help Menu",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Wir arbeiten zu 99% mit Slash-Commands versuche doch mal /help ",
+          "thumbnail": "",
+          "image": "",
+          "footer": "Gamer443 - Bot | /help",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "kick",
+      "description": "Ein einfacher Kick Command !",
+      "ephemeral": false,
+      "options": [
+        {
+          "name": "username",
+          "description": "Welchen User möchtest du Kicken ?",
+          "type": "USER",
+          "required": true
+        },
+        {
+          "name": "reason",
+          "description": "Warum möchtest du den Nutzer kicken ?",
+          "type": "STRING",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ban",
+      "description": "Ein einfacher Ban Command !",
+      "ephemeral": false,
+      "options": [
+        {
+          "name": "username",
+          "description": "Welchen User möchtest du Bannen ?",
+          "type": "STRING",
+          "required": true
+        },
+        {
+          "name": "reason",
+          "description": "Warum möchtest du den User Bannen ?",
+          "type": "STRING",
+          "required": false
+        },
+        {
+          "name": "time",
+          "description": "Wie lange soll der Nutzer gebannt werden ? [In Tagen] Bsp. (1)",
+          "type": "STRING",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mute",
+      "description": "Ein einfacher Mute command !",
+      "ephemeral": false,
+      "options": [
+        {
+          "name": "username",
+          "description": "Welchen User möchtest du Muten ?",
+          "type": "USER",
+          "required": true
+        },
+        {
+          "name": "reason",
+          "description": "Warum möchtest du den User Muten ? [Für den Log]",
+          "type": "STRING",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "unmute",
+      "description": "Ein einfacher Unmute command !",
+      "ephemeral": false,
+      "options": [
+        {
+          "name": "username",
+          "description": "Wenn möchtest du entmuten ?",
+          "type": "USER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "botactivity",
+      "description": "Setze die Botactivity fest !",
+      "ephemeral": false,
+      "options": [
+        {
+          "name": "activity",
+          "description": "Welche activity soll der Bot haben ?",
+          "type": "STRING",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "description": "Cleare Narichten in einem Channel, beachte das die Narichten nicht über 2 Wochen alt sein dürfen !",
+      "ephemeral": false,
+      "options": [
+        {
+          "name": "amount",
+          "description": "Wie viele Narichten möchtest du clearen [Max : 100]",
+          "type": "STRING",
+          "required": true
+        },
+        {
+          "name": "channel",
+          "description": "In welchem Channel möchtest du die Narichten clearen ?",
+          "type": "CHANNEL",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "react",
+      "description": "Send the reaction menu",
+      "ephemeral": false,
+      "options": []
+    },
+    {
+      "name": "rate",
+      "description": "Lasse den Bot einen User bewerten !",
+      "ephemeral": false,
+      "options": [
+        {
+          "name": "username",
+          "description": "Welchen User soll der Bot bewerten ?",
+          "type": "USER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "ticketsetup",
+      "description": "Sende das Ticket-Menu",
+      "ephemeral": false,
+      "options": []
+    },
+    {
+      "name": "rank",
+      "description": "Frage deine aktuelle XP Anzahl ab !",
+      "ephemeral": false,
+      "options": []
+    },
+    {
+      "name": "help",
+      "description": "Lasse dir alle Commands anzeigen !",
+      "ephemeral": false,
+      "options": []
+    }
+  ]
+}
