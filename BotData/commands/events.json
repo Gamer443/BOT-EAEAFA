@@ -31,6 +31,15 @@
           "messageActionRows": [],
           "user": "${tempVars.newuser.id}",
           "rolename": "1079369496453718024"
+        },
+        {
+          "name": "set-xp-0",
+          "category": "User Data",
+          "type": "Set User Data",
+          "messageActionRows": [],
+          "user": "${tempVars.newuser.id}",
+          "field": "xp",
+          "fieldvalue": "0"
         }
       ],
       "var": {
@@ -513,6 +522,22 @@
                         "emoji": "",
                         "URL": "",
                         "ephemeral": false
+                      },
+                      {
+                        "label": "Admin - Only",
+                        "customid": "admin-only",
+                        "style": "DANGER",
+                        "emoji": "",
+                        "URL": "",
+                        "ephemeral": false
+                      },
+                      {
+                        "label": "Übernehmen",
+                        "customid": "übernehmen",
+                        "style": "PRIMARY",
+                        "emoji": "",
+                        "URL": "",
+                        "ephemeral": false
                       }
                     ]
                   }
@@ -547,7 +572,7 @@
                 "category": "Channel Action",
                 "type": "Delete Channel",
                 "messageActionRows": [],
-                "channelname": "${tempVars.ticketchannel.id}",
+                "channelname": "${tempVars.buttoninteraction.channelId}",
                 "reason": "--"
               },
               {
@@ -569,6 +594,62 @@
                 "timestamp": "BOOL_TRUE@@",
                 "savetovariable": "",
                 "savetovariabletype": "temp"
+              }
+            ],
+            "admin-only": [
+              {
+                "name": "edit-perms-sup",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "permid": "1079369496474697839",
+                "permissions": [
+                  "VIEW_CHANNEL"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "edit-perms-mod",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "permid": "1079369496474697840",
+                "permissions": [
+                  "VIEW_CHANNEL"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "reply-embed-admin-only",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "color": "00FF00",
+                "title": "Admin - Only",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Dir werden ab jetzt nur Administratoren Helfen !",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Gamer443 - Bot",
+                "timestamp": "BOOL_TRUE@@",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "übernehmen": [
+              {
+                "name": "reply-übernehmen",
+                "category": "Interaction",
+                "type": "Reply To Interaction With Message",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.buttoninteraction}",
+                "messagetext": "${tempVars.buttoninteraction.member.displayName} wird dir ab jetzt besonderes gut helfen !"
               }
             ]
           },

@@ -1803,7 +1803,9 @@
       "outputs": [
         {
           "label": "next response",
-          "connections": []
+          "connections": [
+            "d943793d-5362-4a67-a223-bd1db970d2cb"
+          ]
         }
       ],
       "inputs": [
@@ -2089,8 +2091,8 @@
           "id": "0y17nnm2-2773-pp4u-ayu9-b55q4886yt2e"
         }
       ],
-      "x": 446,
-      "y": 4267,
+      "x": 450,
+      "y": 4273,
       "rtype": "Control",
       "rsubtype": "Switch Case",
       "formdata": [
@@ -2916,6 +2918,8 @@
       "guid": "d737d634-325a-4012-9fa3-66f6d50b9ee9",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -2930,8 +2934,8 @@
           "id": "c2efda88-c692-4e7d-b466-9ac07c6aa5cb"
         }
       ],
-      "x": 809,
-      "y": 4157,
+      "x": 813,
+      "y": 4156,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -3001,6 +3005,18 @@
           "connections": [
             "59bc7203-6e98-4a2a-9237-a7b9a1f81299"
           ]
+        },
+        {
+          "label": "admin-only",
+          "connections": [
+            "d561ff4a-7c6e-4307-8db0-f8a78beadf6b"
+          ]
+        },
+        {
+          "label": "übernehmen",
+          "connections": [
+            "a9bf7027-7fe9-4df6-a3e3-8b8c0e81fa2f"
+          ]
         }
       ],
       "inputs": [
@@ -3009,8 +3025,8 @@
           "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
         }
       ],
-      "x": 456,
-      "y": 2219,
+      "x": 359,
+      "y": 2098,
       "rtype": "Control",
       "rsubtype": "Switch Case",
       "formdata": [
@@ -3019,12 +3035,16 @@
       "formnames": [
         "varname",
         "switchvalue1",
-        "switchvalue2"
+        "switchvalue2",
+        "switchvalue3",
+        "switchvalue4"
       ],
       "messageActionRows": [],
       "valueFields": [
         "ticketopen",
-        "close-ticket"
+        "close-ticket",
+        "admin-only",
+        "übernehmen"
       ]
     },
     {
@@ -3033,6 +3053,8 @@
       "guid": "198a8392-e396-4d4e-9495-a56b7bb0183d",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -3076,6 +3098,8 @@
       "guid": "621cb844-e640-407f-b8b3-7f5eca16f547",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -3221,8 +3245,8 @@
           "id": "8d127101-e127-4648-90f4-ca420283a634"
         }
       ],
-      "x": 639,
-      "y": 2223,
+      "x": 640,
+      "y": 2217,
       "rtype": "Channel Action",
       "rsubtype": "Create Channel",
       "formdata": [
@@ -3316,6 +3340,8 @@
       "guid": "3b3e1ca2-a385-4fbe-9316-c0b58f4d5923",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -3330,7 +3356,7 @@
           "id": "25e4e36e-b1d1-4998-a23f-7dce4d2cb489"
         }
       ],
-      "x": 1527,
+      "x": 1526,
       "y": 2211,
       "rtype": "Message",
       "rsubtype": "Send Embed",
@@ -3374,6 +3400,22 @@
               "label": "Close Ticket",
               "customid": "close-ticket",
               "style": "DANGER",
+              "emoji": "",
+              "URL": "",
+              "ephemeral": false
+            },
+            {
+              "label": "Admin - Only",
+              "customid": "admin-only",
+              "style": "DANGER",
+              "emoji": "",
+              "URL": "",
+              "ephemeral": false
+            },
+            {
+              "label": "Übernehmen",
+              "customid": "übernehmen",
+              "style": "PRIMARY",
               "emoji": "",
               "URL": "",
               "ephemeral": false
@@ -3437,11 +3479,11 @@
         }
       ],
       "x": 634,
-      "y": 2335,
+      "y": 2334,
       "rtype": "Channel Action",
       "rsubtype": "Delete Channel",
       "formdata": [
-        "${tempVars.ticketchannel.id}",
+        "${tempVars.buttoninteraction.channelId}",
         "--"
       ],
       "formnames": [
@@ -3682,8 +3724,6 @@
           "inline": "false"
         }
       ],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -3762,6 +3802,215 @@
       "formdata": [
         "${tempVars.commandinteraction}",
         "Das Help Menu wurde erfolgreich in Bot-Commands gesendet, da nur dort sowas hingehört ✅"
+      ],
+      "formnames": [
+        "interactionobject",
+        "messageText"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "set-xp-0",
+      "guid": "d943793d-5362-4a67-a223-bd1db970d2cb",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "67cd2c21-8b9d-48ae-8ce3-2bc57ac12eec"
+        }
+      ],
+      "x": 674,
+      "y": 96,
+      "rtype": "User Data",
+      "rsubtype": "Set User Data",
+      "formdata": [
+        "${tempVars.newuser.id}",
+        "xp",
+        "0"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "fieldvalue"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "edit-perms-sup",
+      "guid": "d561ff4a-7c6e-4307-8db0-f8a78beadf6b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b02c7cef-769d-4d90-8d2c-b78bd3118b26"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8d127101-e127-4648-90f4-ca420283a634"
+        }
+      ],
+      "x": 357,
+      "y": 1960,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "1079369496474697839",
+        [
+          "VIEW_CHANNEL"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "edit-perms-mod",
+      "guid": "b02c7cef-769d-4d90-8d2c-b78bd3118b26",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "53cc1ab1-1f62-47dd-9cec-9989c60b7472"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d561ff4a-7c6e-4307-8db0-f8a78beadf6b"
+        }
+      ],
+      "x": 536,
+      "y": 1955,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "1079369496474697840",
+        [
+          "VIEW_CHANNEL"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-embed-admin-only",
+      "guid": "53cc1ab1-1f62-47dd-9cec-9989c60b7472",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b02c7cef-769d-4d90-8d2c-b78bd3118b26"
+        }
+      ],
+      "x": 722,
+      "y": 1944,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "00FF00",
+        "Admin - Only",
+        "",
+        "",
+        "",
+        "",
+        "Dir werden ab jetzt nur Administratoren Helfen !",
+        "",
+        "",
+        "Gamer443 - Bot",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "reply-übernehmen",
+      "guid": "a9bf7027-7fe9-4df6-a3e3-8b8c0e81fa2f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8d127101-e127-4648-90f4-ca420283a634"
+        }
+      ],
+      "x": 954,
+      "y": 2069,
+      "rtype": "Interaction",
+      "rsubtype": "Reply To Interaction With Message",
+      "formdata": [
+        "${tempVars.buttoninteraction}",
+        "${tempVars.buttoninteraction.member.displayName} wird dir ab jetzt besonderes gut helfen !"
       ],
       "formnames": [
         "interactionobject",
